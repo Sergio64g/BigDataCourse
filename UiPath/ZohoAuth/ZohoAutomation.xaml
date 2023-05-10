@@ -1,0 +1,232 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="ZohoAutomation" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mca="clr-namespace:Microsoft.CSharp.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="Row" Type="InArgument(sd:DataRow)" />
+    <x:Property Name="Exists" Type="OutArgument(x:Boolean)" />
+  </x:Members>
+  <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
+  <sap:VirtualizedContainerService.HintSize>935.2,2255.2</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="ZohoAutomation" sap:VirtualizedContainerService.HintSize="475.2,2190.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Default="*CES Juan Pablo Segundo*" Name="tituloNavegador" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: CES Juan Pablo Segundo" sap:VirtualizedContainerService.HintSize="433.6,2097.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="51c7cf2f-603a-43dd-8386-cf356aa52b5d" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="375.2,1880.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:Boolean" Name="ElementExists" />
+              <Variable x:TypeArguments="ui:UiElement" Name="ElementoEncontrado" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:Activate DelayBefore="{x:Null}" DelayMS="{x:Null}" DisplayName="Activate 'A  #Cases'" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="Activate_1">
+              <ui:Activate.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="74496307-ba68-4e16-a5c3-5e02c737f4a9" InformativeScreenshot="3a539f503742982761bc3a316324ff9b" Selector="&lt;webctrl parentid='qtab_Cases' tag='A' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:Activate.Target>
+            </ui:Activate>
+            <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="333.6,22.4" sap2010:WorkflowViewState.IdRef="MaximizeWindow_1" />
+            <uix:NClick ClickType="Single" DisplayName="Click 'I'" sap:VirtualizedContainerService.HintSize="333.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://desk.zoho.eu/support/cesjuanpablosegundo/ShowHomePage.do#Cases" DesignTimeRectangle="1706, 201, 19, 19" FriendlyName="'I'" FullSelectorArgument="&lt;webctrl parentid='addModuleButton' tag='I' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='addModuleButton' tag='I' type='' aaname='' /&gt;" Guid="ea545121-ff26-44f2-a272-d7644c648cb2" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABcAAAAXCAYAAADgKtSgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAClSURBVEhLY5BTM/5PKzxqOFZMtOGahrb/k9IL/5vbeWKVx4aJNnzhkpX/f/3+/X/ugmVY5bFhog1fsXrDfxAA0djkseFRw7HiYWL40hVr///79w9sCKkApA+kH9k8FMNTMov+r1yz8f/aDVsx8Lnzl8CGgGhs8iAfxSbl4DYcHx7cYY4PjxqOFdPU8LiU3P979x/+n5VfgVUeGybacHIwDQ03/g8AUNyWQWsxh0wAAAAASUVORK5CYII=" InformativeScreenshot="9b18381a986a155ebf46a1223bd3614c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='CES Juan Pablo Segundo' /&gt;" SearchSteps="FuzzySelector, Image" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Nombre del Contacto'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="333.6,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="51c7cf2f-603a-43dd-8386-cf356aa52b5d" Version="V1">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://desk.zoho.eu/support/cesjuanpablosegundo/ShowHomePage.do#Cases/new" DesignTimeRectangle="84, 474, 325, 35" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl parentid='middle_container' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='middle_container' tag='INPUT' type='text' aaname='' /&gt;" Guid="06642c78-cc32-4fcd-8b08-9daf7de9a9f2" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAUkAAAAnCAYAAACCA7o2AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAACfSURBVHhe7dYxDcBAEASx8Od5OO6bJN0PAltaCqN9FoArkQQIIgkQRBIgiCRAEEmAIJIAQSQBgkgCBJEECCIJEEQSIIgkQBBJgCCSAEEkAYJIAgSRBAgiCRBEEiCIJEAQSYAgkgBBJAGCSAIEkQQIIgkQRBIgiCRAEEmAIJIAQSQBgkgCBJEECCIJEEQSIPyRnBkzM3v38SQBgkgCXO0eDqtcKAy0wK8AAAAASUVORK5CYII=" InformativeScreenshot="29f43a4f46b298bca25eb2fab90ee212.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='CES Juan Pablo Segundo' /&gt;" SearchSteps="FuzzySelector, Image">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="84, 445, 325, 23" ElementType="Text" FriendlyName="'Nombre del Contacto'" FullSelectorArgument="&lt;webctrl parentid='middle_container' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='middle_container' tag='LABEL' type='' aaname='Nombre del Contacto' check:text='Nombre del Contacto' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.Text>
+                <InArgument x:TypeArguments="x:String">
+                  <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_3">Row["usuario"].ToString()</mca:CSharpValue>
+                </InArgument>
+              </uix:NTypeInto.Text>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Correo electrónico'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="333.6,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="51c7cf2f-603a-43dd-8386-cf356aa52b5d" Version="V1">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://desk.zoho.eu/support/cesjuanpablosegundo/ShowHomePage.do#Cases/new" DesignTimeRectangle="84, 528, 325, 35" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl idx='3' parentid='middle_container' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='' parentid='middle_container' tag='INPUT' type='text' /&gt;" Guid="e4c4aaf1-2d9c-4e20-af1d-4cbec969bdbc" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAUkAAAAnCAYAAACCA7o2AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAACfSURBVHhe7dYxDcBAEASx8Od5OO6bJN0PAltaCqN9FoArkQQIIgkQRBIgiCRAEEmAIJIAQSQBgkgCBJEECCIJEEQSIIgkQBBJgCCSAEEkAYJIAgSRBAgiCRBEEiCIJEAQSYAgkgBBJAGCSAIEkQQIIgkQRBIgiCRAEEmAIJIAQSQBgkgCBJEECCIJEEQSIIgkQPgjOTNmZvbu40kCXO0emlxcKFZc5ZYAAAAASUVORK5CYII=" InformativeScreenshot="35914ab9b70b124d3d78893d07eae6a2.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='CES Juan Pablo Segundo' /&gt;" SearchSteps="FuzzySelector, Image">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="84, 499, 325, 23" ElementType="Text" FriendlyName="'Correo electrónico'" FullSelectorArgument="&lt;webctrl aaname='Correo electrónico' parentid='middle_container' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Correo electrónico' parentid='middle_container' tag='LABEL' type='' check:text='Correo electrónico' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.Text>
+                <InArgument x:TypeArguments="x:String">
+                  <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_4">Row["correo"].ToString()</mca:CSharpValue>
+                </InArgument>
+              </uix:NTypeInto.Text>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Asunto'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="333.6,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="51c7cf2f-603a-43dd-8386-cf356aa52b5d" Version="V1">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable Accuracy="0.77" BrowserURL="https://desk.zoho.eu/support/cesjuanpablosegundo/ShowHomePage.do#Cases/new" DesignTimeRectangle="84, 639, 918, 35" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;article&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;input' parentid='middle_container' tag='INPUT' type='text' /&gt;" FuzzyAccuracy="0.48" FuzzySelectorArgument="&lt;webctrl aaname='' parentid='middle_container' tag='INPUT' type='text' /&gt;" Guid="a5feea55-a917-433c-ac83-2d966ea5d18c" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAA5oAAAAnCAYAAABuSTe9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAEKSURBVHhe7dkxDcAwEARB8+eX0nVgfKoYgLXljHQgVrcGAAAAQkITAACAlNAEAAAgJTQBAABICU0AAABSQhMAAICU0AQAACAlNAEAAEgJTQAAAFJCEwAAgJTQBAAAICU0AQAASAlNAAAAUkITAACAlNAEAAAgJTQBAABICU0AAABSQhMAAICU0AQAACAlNAEAAEgJTQAAAFJCEwAAgJTQBAAAICU0AQAASAlNAAAAUkITAACAlNAEAAAgJTQBAABICU0AAABSQhMAAICU0AQAACAlNAEAAEgJTQAAAFJCEwAAgJTQBAAAICU0AQAASAlNAAAAUic0n/2amZmZmZmZXe/n0QQAACA08wEKvGBDVdsaEgAAAABJRU5ErkJggg==" InformativeScreenshot="7f07127abe74bf5933783b48b93e6999.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='CES Juan Pablo Segundo' /&gt;" SearchSteps="FuzzySelector, Image">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="84, 611, 55, 23" ElementType="Text" FriendlyName="'Asunto'" FullSelectorArgument="&lt;webctrl aaname='Asunto' parentid='middle_container' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Asunto' parentid='middle_container' tag='LABEL' type='' check:text='Asunto' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADsAAAAbCAYAAADCifeFAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAOiSURBVFhH7VbPSxtBFO4/lZOHghAoFPSkF6UQbwFBT0WoULAKVi/2UjyoPfQWhZJctNQKFQsSD6KSamnZjZvEJGabuGsTd03M1zezk2R/KWhBaZoPBt335s28b+bN9/II/xE6ZNsVHbLtig5ZjtoRssODkJ/N4LQkbP84riV7uT0DKdAF6XEAyeW0sD4k9pGmXNK74vMOuIasCXWWiIaWkGF/exbxq1oXvgeCvgElwMjePQ9/sqU1HNPCyZiKWmIRcqAXmcQ1m9RMVEo6H5c1YWMQdtNuY3Db2XdZ/E8w/dZiOIkieRNZWscQsYYpbC74ktVWhqiEnyNXrKNePUSmJwBpNg6z7txIX5+ETKUlURJ8BIeQ/qriijl357jNU3ZuO/+eg6qsQRmgKmquRfvLLGsVp1OkHUHbPmyMRHFurQDtoyuPQDeSCzv47TowL1kSJovcTpOcnXwTjdtfyaBK8+o0yolV5BKG5W+SsnxNuO3iW+p7hdw3na9VLcaR7iNbKAKNQmplurFNpiEBpL5oqBRpaAZqbM/1cbL3Q4kdoUxPjeexu4gkkZfn93Bp7crhIdsQptS20Uoyb5WQQ6h4koM4+eEi08CtyIaRzTjn6R/CZB9BriBsvuuJi5nYwgXZ7PF+F+Qia6IwTcE9S1yQWsE68mPMbhMqcwcpVjrBMFKxOM7c7elWZEeRzdnmEM5jo067La6JxiXECs49GL4vkdZQJey07E6yojSlYD/1V9ZjbeMpe09OobpS95F9M8LbE0tEGl6CqgrnfZBVIpwsI+Qh63MQDrLW1ZPIfIqjsO0eESiMlI9Q1asG9N33OGYi8uIzKsx4H2RvutmDt3y+/SBaZBvCNLaGMjk9wYTiQi8t4BIqG4oLTyA9i+CMxYoyUrZsb59gbE42k/5rssggG2I5r/Kc7bByHUde8yFrCZM3OQdE2TChupKjUKajKKkmbzW1/BZSpKDyu0Ouks3D63uNU4XUs6SiFJtEcoCeyF3IisNLLkuo5A6R35T5vgbFyySoyfk4dN5nrX24bUW2chEQZIUABedQMPxv1UIGubD1i0ot7SH7kpU9xfFBvW16A7pN2IyfERzzt97wR3EmW7pwa7Ks3070i7W6IE+tQRM/HioH9MRC3cJHg/p9KiZ7FNopUITriTrRmMfe6wX1PVOQ9Is3NQ2Gy++e5xfH4LZXyxouxIW4fTWDKqjc8rn9HrLtjA7ZdkWHbLuiQ7Y9AfwB8kOOFtyTgp0AAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.Text>
+                <InArgument x:TypeArguments="x:String">
+                  <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_5">Row["asunto"].ToString()</mca:CSharpValue>
+                </InArgument>
+              </uix:NTypeInto.Text>
+            </uix:NTypeInto>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Enviar'" sap:VirtualizedContainerService.HintSize="333.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="51c7cf2f-603a-43dd-8386-cf356aa52b5d">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://desk.zoho.eu/support/cesjuanpablosegundo/ShowHomePage.do#Cases/new" DesignTimeRectangle="84, 945, 113, 37" ElementType="Button" FriendlyName="'Enviar'" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='button' aaname='Enviar' check:text='Enviar' /&gt;" Guid="23bf12c4-6648-4715-a10c-67ecae7f39c9" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHUAAAApCAYAAAALSGYwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAMsSURBVHhe7ZvPaxpBFMd77q3/hv+B/0DBo/9Brj33UI/eJDcvJelBkByk3kxDQAIhlBwqoYj0oiDEU7CSYlaNuxp/vL63u293XUdoGiE7w/vCl2Rn3kyXfPbNvN0yb0BknASqgRKoBmoLarU5g/efLXj36Q+8/XgvTqiJD3EiXnFtQM19e1ROIE62iVtUAVQirhog1sPRjA2gUiqrgsV6mPixAqiyh+pt4scKoKoCxXqZJVANMkugGmSWQDXILIFqkFkC1SCzEgc1/2sJnb7ajR9j5Zj/deb7Aix7CfWzobJfN7MSB7U88G9IIau738+Y5b4/8Z2t7NfNrMRC7dyo+/fq0hRq7TnkS4o+Dc3SEmrqaAQHJxak6LqIv1fG4bXrB8hSW+lhY1wwtjKCNF37Y7NFRcy5A8fnI8gUNvvSpXDeND4Uh5eTrZjXMktLqLnuGiNW0OouwfHCXTkDB7JuzATqY2pZQnnjDz6FBn33Hs/hA13fLCko/LcKE6j2ae6IFiuonfJ4//5WC6i3V14/3ke9Eva/plmJhepYu4skDyoKi5wqZlO6iDAGXlvr2it6Mk0PWK8Z/kdF6nqx2RaHWnKgY6+h83OK2YvZfvkE7mfy+xlk/Dn4/gh2ozWDKsa6D0gCzNKmUIoWSQx1I5vPPABBXMGBFiUTZuWBGzP0545kbxzqlh/hysYA+wlyfhvfHz88STJL4+U3FnMag4rO31IcLo9f8frLDHo06M4J914lVMxQ3E9r3YW7Qlj0YGxBXcNVZElOillGQ+U25xaXSHcPXEOjHhmjWn5phV6t4fcAl3ysjDu0BwvUl3mvULlgshfQop9cILFjUL33ViyMglecXcuvQH2WGWq8UIoWS/8ONSyYSNGiybUSKmbzhQXpowkctv3qWqC+zAxVJQb2HKhBwYSvIcfx98kY1NTZHHpegezK6s+gSMu2QNXdQ8icbH900MEsgWqQWQLVILMEqkFmCVSDzBKoBpklUA0yS6AaZFYAVY5d6G3lsQs5IKW3lQek5Cij3lYeZSTJoWM9vfPQMYuIUyrLHptsEx/iFM1Q1hZUkf4SqMYJ4C8vAvox0nfS4wAAAABJRU5ErkJggg==" InformativeScreenshot="55da2da54f80819a863b42aab1691f20.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='CES Juan Pablo Segundo' /&gt;" SearchSteps="FuzzySelector, Image" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <ui:WaitUiElementAppear WaitActive="{x:Null}" WaitVisible="{x:Null}" DisplayName="Find Element 'A  close-ticket'" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_1">
+              <ui:WaitUiElementAppear.FoundElement>
+                <OutArgument x:TypeArguments="ui:UiElement">
+                  <mca:CSharpReference x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpReference`1_2">ElementoEncontrado</mca:CSharpReference>
+                </OutArgument>
+              </ui:WaitUiElementAppear.FoundElement>
+              <ui:WaitUiElementAppear.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="7eb57cb9-5a1d-40e2-86b0-d0758029f2eb" InformativeScreenshot="3b1c58913563f330b24d85e973b1d5fe" Selector="&lt;webctrl id='close-ticket' parentid='statusVal' tag='A' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:WaitUiElementAppear.Target>
+            </ui:WaitUiElementAppear>
+            <Assign sap:VirtualizedContainerService.HintSize="333.6,61.6" sap2010:WorkflowViewState.IdRef="Assign_1">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Boolean">
+                  <mca:CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_5">Exists</mca:CSharpReference>
+                </OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Boolean">
+                  <mca:CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_8">ElementoEncontrado != null</mca:CSharpValue>
+                </InArgument>
+              </Assign.Value>
+            </Assign>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Tickets'" sap:VirtualizedContainerService.HintSize="333.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="51c7cf2f-603a-43dd-8386-cf356aa52b5d" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://desk.zoho.eu/support/cesjuanpablosegundo/ShowHomePage.do#Cases/dv/88653000000136175" DesignTimeRectangle="9, 137, 117, 55" ElementType="Text" FriendlyName="'Tickets'" FullSelectorArgument="&lt;webctrl parentid='qtab_Cases' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='qtab_Cases' tag='A' type='' aaname='Tickets' check:text='Tickets' /&gt;" Guid="13525c06-6daa-4e3b-845c-86f19d64f36c" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHkAAAA7CAYAAABfaiUuAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAPBSURBVHhe7ZhPaxpBFMD7SXrsF8jHyCmXnnLy0IOHgLTQkhDiJR4SKIbCQjGkpgcJTQklIqmGoIcKIVJYSG0IW4qKFg3BRDCElcDrm91Z94+rJNRo9b2B38E3b2fG+Tl/1idWASynjR/wrZxnpgypmCVPM1KxKfng+Ct8SMWZKUMqNiW/WV6F2bl5Zkp4+mzGQCpmydMISyYASyYASyYASyYASyYASyYASyYASyYASyYASyYASyYASyYASyYASyYASyYASyYASyYASyYASyYASybA2CQrJxeg33YGUIKkzE1q7s82S6BkilBpYf0dDvyuA+3LGhT2FQh0c+JQaGB9QwXF9WwINnEMbeyrfpKAlyIWU6HeMw6T+kncbsunvot2aPfxKg5Z7Rraujk2veUd22gYm+S1jAaVck1yDWIe4PbaESvAR5mbrorKGqQdz88GE1C47IgKnMAbqBvPoDQhG0s9F5a5CVDbGGgXYdPx/MpRzehTr+ZgxYpvFUGkQuvCMQ6Ts4yCOQqkfzrisn8df1jd2PGu7AP7bYnaDjSrZl3T+JIXkH1tj2MUjE2ymxxURMc44X71vZJDsHNuTnD7PGVLEgQV2MmkQAlasV7JgW1LJsa6eYiU3D5N2LFB4A9FlMqRT90nzfgRNb/H7FgwAhvv1t15I2AyJYfzUBehW6272vvjkRzBvowljO1FPLnDlJwx61ySx8RkSt4vicA9ZViSNdiLHcKZsYXegLod6s21JOPusBZVuqwu++QKBkkO43eSR0e7WoTs5xgseHNGxGRKlpP7IMmOopcP3Vu8hXUme0rffgZJRgLv81BxNoh3h18HhC5ebh4oWW6FD17JUbztVuVZjs/2TPYwV7KDhcgupE9r8lKIu8iWf95jMZmSoyo0RehKhQ1Hnj+eMxlv5datt5KJuHOHeSb7EEiZx8x984fFZEqei0D2j4iJV6Xe7W8l8WXg7brv5WuYknH17sSWXLGAlZ9x5I2ACZWMWKKw6FclKOTykM2pcNa4MWK2KB/JiO9rlJSsV1VsS7Rnk9z2rHpBX8lhSP6WxwJeuvKijbxmvifrJdhzvraNgMmVLIikoFA1pXYLXm4q353vzv6SBT1/iPS5eIniu7oHrWTxb1fZM7ZWCZJv+5zvj8h/IvlfCcHi+oAL0lgRY4vC4ohXr5MpkcwMgiUTgCUTgCUTgCUTgCUTgCUTgCUTgCUTgCUTgCUTgCUTgCUTgCUTgCUTgCUTgCUTgCUTgCUTgCUTgCUTwFfy8/kX3QpmWpiBv0j7+8uCxP2fAAAAAElFTkSuQmCC" InformativeScreenshot="4ea1e1a5999cb382a4f665fb98aaef0d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='#102 - CES Juan Pablo Segundo' /&gt;" SearchSteps="FuzzySelector, Image" />
+              </uix:NClick.Target>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="c8ec4c8aa2d034fa223cd0cf7da3f169.png" Selector="&lt;html app='chrome.exe' title='&amp;quot;*CES Juan Pablo Segundo*&amp;quot;' /&gt;" Url="https://desk.zoho.eu/support/cesjuanpablosegundo/ShowHomePage.do#Cases" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

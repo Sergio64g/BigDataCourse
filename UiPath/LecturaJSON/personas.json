@@ -1,0 +1,194 @@
+{
+  "results": [
+    {
+      "_id": "628248ae4228fde8651c7471",
+      "nombre": "Cleveland",
+      "correo": "clevelandhendricks@gynko.com",
+      "viajes": [
+        {
+          "pais": "Andorra",
+          "address": 5
+        },
+        {
+          "pais": "Jordan",
+          "address": 6
+        },
+        {
+          "pais": "Belgium",
+          "address": 10
+        }
+      ]
+    },
+    {
+      "_id": "628248ae8a7bb546ec2ac3d4",
+      "nombre": "Parsons",
+      "correo": "parsonshendricks@gynko.com",
+      "viajes": [
+        {
+          "pais": "Spain",
+          "address": 2
+        },
+        {
+          "pais": "Peru",
+          "address": 3
+        },
+        {
+          "pais": "Aruba",
+          "address": 7
+        }
+      ]
+    },
+    {
+      "_id": "628248ae17bca57e4f60ecde",
+      "nombre": "Samantha",
+      "correo": "samanthahendricks@gynko.com",
+      "viajes": [
+        {
+          "pais": "Antigua and Barbuda",
+          "address": 10
+        },
+        {
+          "pais": "Denmark",
+          "address": 10
+        },
+        {
+          "pais": "Laos",
+          "address": 10
+        }
+      ]
+    },
+    {
+      "_id": "628248ae9a7b89c5e1f86c2c",
+      "nombre": "Waters",
+      "correo": "watershendricks@gynko.com",
+      "viajes": [
+        {
+          "pais": "Tuvalu",
+          "address": 6
+        },
+        {
+          "pais": "Suriname",
+          "address": 4
+        },
+        {
+          "pais": "Libya",
+          "address": 9
+        }
+      ]
+    },
+    {
+      "_id": "628248ae95a5c00e291dcf3c",
+      "nombre": "Pearson",
+      "correo": "pearsonhendricks@gynko.com",
+      "viajes": [
+        {
+          "pais": "East Timor",
+          "address": 3
+        },
+        {
+          "pais": "Turkmenistan",
+          "address": 1
+        },
+        {
+          "pais": "Cameroon",
+          "address": 9
+        }
+      ]
+    },
+    {
+      "_id": "628248aefc3cb384d43d4453",
+      "nombre": "Dale",
+      "correo": "dalehendricks@gynko.com",
+      "viajes": [
+        {
+          "pais": "Comoros",
+          "address": 7
+        },
+        {
+          "pais": "Ecuador",
+          "address": 1
+        },
+        {
+          "pais": "British Indian Ocean Territory",
+          "address": 2
+        }
+      ]
+    },
+    {
+      "_id": "628248aebc6a795f0ac97647",
+      "nombre": "Cunningham",
+      "correo": "cunninghamhendricks@gynko.com",
+      "viajes": [
+        {
+          "pais": "Finland",
+          "address": 10
+        },
+        {
+          "pais": "Korea (North)",
+          "address": 1
+        },
+        {
+          "pais": "Cayman Islands",
+          "address": 7
+        }
+      ]
+    },
+    {
+      "_id": "628248ae8e9aeae208060716",
+      "nombre": "Valenzuela",
+      "correo": "valenzuelahendricks@gynko.com",
+      "viajes": [
+        {
+          "pais": "Dominican Republic",
+          "address": 2
+        },
+        {
+          "pais": "Albania",
+          "address": 10
+        },
+        {
+          "pais": "Thailand",
+          "address": 3
+        }
+      ]
+    },
+    {
+      "_id": "628248ae290a52e68d2aba98",
+      "nombre": "Faith",
+      "correo": "faithhendricks@gynko.com",
+      "viajes": [
+        {
+          "pais": "Bahamas",
+          "address": 2
+        },
+        {
+          "pais": "Equatorial Guinea",
+          "address": 10
+        },
+        {
+          "pais": "Chad",
+          "address": 2
+        }
+      ]
+    },
+    {
+      "_id": "628248ae69534984537a50b5",
+      "nombre": "Nikki",
+      "correo": "nikkihendricks@gynko.com",
+      "viajes": [
+        {
+          "pais": "Guyana",
+          "address": 4
+        },
+        {
+          "pais": "Czech Republic",
+          "address": 10
+        },
+        {
+          "pais": "Macau",
+          "address": 2
+        }
+      ]
+    }
+  ]
+}

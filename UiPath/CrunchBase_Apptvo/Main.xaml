@@ -1,0 +1,328 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mca="clr-namespace:Microsoft.CSharp.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="DatosEmpresas" Type="InArgument(x:String)" />
+  </x:Members>
+  <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
+  <sap:VirtualizedContainerService.HintSize>1116,3003.2</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Security</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="777.6,2938.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="EmpresasDataTable" />
+      <Variable x:TypeArguments="x:String" Default="https://www.crunchbase.com/organization/" Name="URLBaseCruchbase" />
+      <Variable x:TypeArguments="sd:DataTable" Name="DatosEmpresas" />
+      <Variable x:TypeArguments="x:String" Name="Empresa" />
+      <Variable x:TypeArguments="x:String" Name="Datos" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Customers | Apptivo" sap:VirtualizedContainerService.HintSize="736,468.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="25ca8363-a952-4c15-a67b-e74873d72278" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="375.2,252" sap2010:WorkflowViewState.IdRef="Sequence_1">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="Empresa" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NExtractData AppendResults="False" ContinueOnError="True" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='New column 0'&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='text'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="333.6,157.6" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="Rows" MaximumResults="0" ScopeIdentifier="25ca8363-a952-4c15-a67b-e74873d72278" Version="V1">
+              <uix:NExtractData.DataTable>
+                <InOutArgument x:TypeArguments="sd:DataTable">
+                  <mca:CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_2">EmpresasDataTable</mca:CSharpReference>
+                </InOutArgument>
+              </uix:NExtractData.DataTable>
+              <uix:NExtractData.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="427, 411, 1568, 254" FriendlyName="'amazonSergio García'" FullSelectorArgument="&lt;webctrl id='scrollBodyRows' tag='DIV' /&gt;" Guid="19acfeac-97d4-47a1-aa28-f1c53be9fa02" InformativeScreenshot="c2b7066ac46ea572adfdb81cc5dd5238.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Customers | Apptivo' /&gt;" SearchSteps="Selector" />
+              </uix:NExtractData.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NExtractData>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="bd302010a3c96fd9b461f956412f4100.png" Selector="&lt;html app='chrome.exe' title='Customers | Apptivo'/&gt;" Url="https://www.apptivo.com/app/customers.jsp#/dashboard/show-all/" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="736,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="RequestCustomerDetails.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InArgument x:TypeArguments="sd:DataTable" x:Key="EmpresaDataTable">
+          <mca:CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_10">EmpresasDataTable</mca:CSharpValue>
+        </InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="URLBaseCrunchbase">
+          <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_3">URLBaseCruchbase</mca:CSharpValue>
+        </InArgument>
+        <InOutArgument x:TypeArguments="sd:DataTable" x:Key="DatosEmpresa">
+          <mca:CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_4">DatosEmpresas</mca:CSharpReference>
+        </InOutArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+    </ui:InvokeWorkflowFile>
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="736,2183.2" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+      <ui:ForEachRow.Body>
+        <ActivityAction x:TypeArguments="sd:DataRow">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="702.4,2062.4" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="660.8,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Error">
+              <ui:LogMessage.Message>
+                <InArgument x:TypeArguments="x:Object">
+                  <mca:CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_12">CurrentRow[0].ToString()</mca:CSharpValue>
+                </InArgument>
+              </ui:LogMessage.Message>
+            </ui:LogMessage>
+            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Customers | Apptivo" sap:VirtualizedContainerService.HintSize="660.8,1836.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="0b95d55e-1e0e-46f1-b966-ab9158c4f74d" Version="V1">
+              <uix:NApplicationCard.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="627.2,1620" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NGetText DisplayName="Get Text 'Name'" sap:VirtualizedContainerService.HintSize="585.6,157.6" sap2010:WorkflowViewState.IdRef="NGetText_1">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.apptivo.com/app/customers.jsp#/dashboard/show-all/" DesignTimeRectangle="427, 417, 313, 29" ElementType="Text" FriendlyName="'amazon'" FullSelectorArgument="&lt;webctrl aaname='amazon' parentid='scrollBodyRows' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='scrollBodyRows' tag='DIV' type='' /&gt;" Guid="0302997f-0f7e-42d5-aa18-9c0b4e288e7c" InformativeScreenshot="2e97b9372046f03912fcea71392136b2.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Customers | Apptivo' /&gt;" SearchSteps="FuzzySelector">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target DesignTimeRectangle="453, 376, 258, 23" ElementType="Text" FriendlyName="'Name'" FullSelectorArgument="&lt;webctrl parentid='scrollHeadCells' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='scrollHeadCells' tag='SPAN' type='' aaname='Name' check:text='Name' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAQYAAAAbCAYAAACeCiHNAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAIoSURBVHhe7ZhbcoMwDEVZZ97ZW0u2AdkD2QHZgb9VbPyQjZNmpqUf6dHMibAkG350EWnO57MAAGgQBgBY0JxOJwEA0LiJwV7g8Xh88EwMALAAYQCABU4YjsfjQ8iTr8UD5N8zH4UBj8fjg2/sj6O9iZHZzO0yxxY5I7dWxQHgLakKg8govSpCGAD+F83hcBDH56CEYbJ7N8eznJHh08cA4G1xE4O9yCcGa7MIuLwSBjsxuPosnmy8pvzl5rOTyMRra9M6y1u79+nccr+38Zrn8Xj8Or4yMRgxoR/NIJciFyeGiijMlmrKxtZm4k2S2f82wvN0dx8sTNcAwDpUhWG4pqa3b+maMISmT43ayegifo+qSfsuMoRQLRY+X+L9Runc2Q9iALAKzX6/F0fW/HtpY1NPjVjk4h5P+XYf+zkez5gmj9bXPo1NwpCtq1Z/BgD4PdzEYC/yqWBaqwnA3EeV8/XXkF2aFQZ7rm74cJ84RXgRqNU9F4Z0ftiPx+N/1z+cGFysL5s/5No0/sc3v/qUKCcGLwKvxuJaTRUA8Hc8FwYtAM5CbikCWkR+KgzpWWrnT582fh8ArEOz2+3E8aGE4cPHsri1kCsFI7exn/e2oWjs4nmvxrpyWPFmhjbWAMA6fC8ME6lJdS5NDdasGJQN/hNhsJTigCgA/A1JGAAAPAgDACxottutAABoEAYAWOCEYbPZZEHWrFn/7zUTAwAsaKw6AAAkNvIF3QLder8Vb1AAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NGetText.Target>
+                      <uix:NGetText.Text>
+                        <OutArgument x:TypeArguments="x:String">
+                          <mca:CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_6">Empresa</mca:CSharpReference>
+                        </OutArgument>
+                      </uix:NGetText.Text>
+                    </uix:NGetText>
+                    <If sap:VirtualizedContainerService.HintSize="585.6,1329.6" sap2010:WorkflowViewState.IdRef="If_1">
+                      <If.Condition>
+                        <InArgument x:TypeArguments="x:Boolean">
+                          <mca:CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_14">CurrentRow[0].ToString() == Empresa</mca:CSharpValue>
+                        </InArgument>
+                      </If.Condition>
+                      <If.Then>
+                        <Sequence sap:VirtualizedContainerService.HintSize="550.4,1139.2" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <Assign sap:VirtualizedContainerService.HintSize="508.8,61.6" sap2010:WorkflowViewState.IdRef="Assign_1">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">
+                                <mca:CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_7">Datos</mca:CSharpReference>
+                              </OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">
+                                <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_15">CurrentRow[1].ToString() + " " + CurrentRow[2].ToString()</mca:CSharpValue>
+                              </InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="508.8,944" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+                            <ui:ForEachRow.Body>
+                              <ActivityAction x:TypeArguments="sd:DataRow">
+                                <ActivityAction.Argument>
+                                  <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                                </ActivityAction.Argument>
+                                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="475.2,821.6" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Customers | Apptivo" sap:VirtualizedContainerService.HintSize="433.6,727.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" ScopeGuid="eb46d69d-c3bf-46a8-b8b0-59de39bd22f9" Version="V1">
+                                    <uix:NApplicationCard.Body>
+                                      <ActivityAction x:TypeArguments="x:Object">
+                                        <ActivityAction.Argument>
+                                          <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                                        </ActivityAction.Argument>
+                                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="375.2,510.4" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <uix:NClick ClickType="Single" DisplayName="Click 'amazon'" sap:VirtualizedContainerService.HintSize="333.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left">
+                                            <uix:NClick.Target>
+                                              <uix:TargetAnchorable BrowserURL="https://www.apptivo.com/app/customers.jsp#/dashboard/show-all/" DesignTimeRectangle="427, 417, 313, 29" ElementType="Text" FriendlyName="'amazon'" FullSelectorArgument="&lt;webctrl aaname='amazon' parentid='scrollBodyRows' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='amazon' parentid='scrollBodyRows' tag='DIV' type='' check:text='amazon' /&gt;" Guid="d9281106-dd9a-4ad1-83c9-f6055597280b" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAT0AAAAhCAYAAACr+HzJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAHSSURBVHhe7dnbbYMwGIDR7sRczSpRN0n2iFRljEp5yQQumEscMA20T9V/joQqwBiePtnp2/1+T5fLJQFEIHpAKKIHhCJ6QCiiB4QiekAoogeEInpAKKIHhCJ6QCiiB4QiekAoogeEInpAKKIHhLIxerd0em9S05THMV2Hu+nrlA7NIZ3Ox8X960fxzMf0ROunOWv3+uP4mQdkT3N37/8abrRu50Nq3k/p2v2dxhTfDIS0KXo5Lk/BuqZjF5HxWo5ee95G5pYvPKI1RWoYM56/nHMmj5/PP50PkSvC15836XCeRvTPrMwPxPDr7e1TtGZB64wrrTE5Y9TKMXPLEPb6gFVWlsXKbozaGLnFM63lNwHR7IreuHqajqfo1beXr6K3Oufos9syzwKXry23qnmu4fla4GrXgFi2b29zlB6hWa709kXv5ZydygoyW4le+bzoATUboldboc1+H9sdvQ1zDmMev8kVtm5vRQ+Y2Ry9Mj7TKu2P0VufcwjgaqCW9/P7im8QPaBm2296wzaz3472YeojM2wxd0ev9dOcefta3CuOaijz8er9ogfs/EcGwH8nekAoogeEInpAKKIHhCJ6QCiiB4QiekAoogeEInpAICl9A/ZqVR1zmzURAAAAAElFTkSuQmCC" InformativeScreenshot="6ce46506a34f1b59f96f2fae043ba51b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Customers | Apptivo' /&gt;" SearchSteps="FuzzySelector, Image">
+                                                <uix:TargetAnchorable.Anchors>
+                                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                    <uix:Target DesignTimeRectangle="453, 376, 258, 23" ElementType="Text" FriendlyName="'Name'" FullSelectorArgument="&lt;webctrl parentid='scrollHeadCells' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='scrollHeadCells' tag='SPAN' type='' aaname='Name' check:text='Name' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAQYAAAAbCAYAAACeCiHNAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAIoSURBVHhe7ZhbcoMwDEVZZ97ZW0u2AdkD2QHZgb9VbPyQjZNmpqUf6dHMibAkG350EWnO57MAAGgQBgBY0JxOJwEA0LiJwV7g8Xh88EwMALAAYQCABU4YjsfjQ8iTr8UD5N8zH4UBj8fjg2/sj6O9iZHZzO0yxxY5I7dWxQHgLakKg8govSpCGAD+F83hcBDH56CEYbJ7N8eznJHh08cA4G1xE4O9yCcGa7MIuLwSBjsxuPosnmy8pvzl5rOTyMRra9M6y1u79+nccr+38Zrn8Xj8Or4yMRgxoR/NIJciFyeGiijMlmrKxtZm4k2S2f82wvN0dx8sTNcAwDpUhWG4pqa3b+maMISmT43ayegifo+qSfsuMoRQLRY+X+L9Runc2Q9iALAKzX6/F0fW/HtpY1NPjVjk4h5P+XYf+zkez5gmj9bXPo1NwpCtq1Z/BgD4PdzEYC/yqWBaqwnA3EeV8/XXkF2aFQZ7rm74cJ84RXgRqNU9F4Z0ftiPx+N/1z+cGFysL5s/5No0/sc3v/qUKCcGLwKvxuJaTRUA8Hc8FwYtAM5CbikCWkR+KgzpWWrnT582fh8ArEOz2+3E8aGE4cPHsri1kCsFI7exn/e2oWjs4nmvxrpyWPFmhjbWAMA6fC8ME6lJdS5NDdasGJQN/hNhsJTigCgA/A1JGAAAPAgDACxottutAABoEAYAWOCEYbPZZEHWrFn/7zUTAwAsaKw6AAAkNvIF3QLder8Vb1AAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                                                  </scg:List>
+                                                </uix:TargetAnchorable.Anchors>
+                                              </uix:TargetAnchorable>
+                                            </uix:NClick.Target>
+                                          </uix:NClick>
+                                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Description'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="333.6,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_1" Version="V1">
+                                            <uix:NTypeInto.Target>
+                                              <uix:TargetAnchorable BrowserURL="https://www.apptivo.com/app/customers.jsp#/dashboard/show-all/" DesignTimeRectangle="1042, 622, 830, 38" FriendlyName="'DIV'" FullSelectorArgument="&lt;webctrl parentid='apptivo-attribute-container_description_attr' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='apptivo-attribute-container_description_attr' tag='DIV' type='' aaname='' /&gt;" Guid="f30d3076-a434-48d4-8dbb-5d9223ac9464" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAA0IAAAAqCAYAAACeEeveAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAEBSURBVHhe7dcBCQAgAMRA+3f9DArW2B0sxM62K0mSJEml/ggBAABUGCEAACDHCAEAADlGCAAAyDFCAABAjhECAAByjBAAAJBjhAAAgBwjBAAA5BghAAAgxwgBAAA5RggAAMgxQgAAQI4RAgAAcowQAACQY4QAAIAcIwQAAOQYIQAAIMcIAQAAOUYIAADIMUIAAECOEQIAAHKMEAAAkGOEAACAHCMEAADkGCEAACDHCAEAADlGCAAAyDFCAABAjhECAAByjBAAAJBjhAAAgBwjBAAA5BghAAAgxwgBAAA5RggAAMgxQgAAQI4RAgAAcowQAACQY4QAAIAcIwQAAORsuw8+KItZp2f7FwAAAABJRU5ErkJggg==" InformativeScreenshot="7c99060af5e1b1c9d25075d110d22940.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Customers | Apptivo' /&gt;" SearchSteps="FuzzySelector, Image">
+                                                <uix:TargetAnchorable.Anchors>
+                                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                    <uix:Target DesignTimeRectangle="1041, 590, 83, 21" FriendlyName="'Description'" FullSelectorArgument="&lt;webctrl parentid='apptivo-attribute-main-container_description_attr' tag='FONT' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='apptivo-attribute-main-container_description_attr' tag='FONT' type='' aaname='            Description' check:text='Description' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFcAAAAZCAYAAABEmrJwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAHvSURBVGhD7ZSxjcJAEEWvJ7qgBeqgCWJqIKUEAiIiOiAkcw0+faSH/g2zxhj2AGmDp8U7szOzD8NP13V9ow5NbkWa3Io0uRVpcivS5Fakya1Ik1uRq9zT6dQvFot+NpvdsFwu+/P5fHP4HRyPx34+n79kptVqdbnfbrdL488ySq5QTDl++B08I1cSJZTnf5cbJbr0zWZz3f82NLvu4HJrc1euyN4WrXouvdkxnl0s5qiHeinm86zX60tcn/f7/Z9ZPG+73V5r6Zl5EAv0yd5c7kqu1/FaWjkv3A2MkhtjmThxLy54+0s5XJyeHlP+4XBI5XoeMM9YuVo9D8hXTqzlcDd4SC5NGIILKoemWhHnQ0Wo4f28Bj3j0KpXkktetkdt//W4XP+ysxz2qONzxxyYJJcGGXEIiKKJa2XPiT3ZL8mNc1M/zuMCkCK5pTr0Yz+rw4vie+Kh/9zYICM2iLnE2dfq+VCa51Pk+tyT5frPhYIU44LkDhGHpIb3cwGleUpyfb6hmUty/UyWwx4zUleMlqukDL+kDxJRo6FaDDC2hvcVQ3IjfhYBQudVB3GKxRyHfOW8XG48JDI5DFmKI2RMjUflCp1VTHXiuXg/5Ua5Xp+8WGeS3G/F5bqET6DJrUiTW5Gvl/vJNLkVaXKr0fW/5EAU1YPrjJYAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                                                  </scg:List>
+                                                </uix:TargetAnchorable.Anchors>
+                                              </uix:TargetAnchorable>
+                                            </uix:NTypeInto.Target>
+                                            <uix:NTypeInto.Text>
+                                              <InArgument x:TypeArguments="x:String">
+                                                <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_16">Datos</mca:CSharpValue>
+                                              </InArgument>
+                                            </uix:NTypeInto.Text>
+                                          </uix:NTypeInto>
+                                        </Sequence>
+                                      </ActivityAction>
+                                    </uix:NApplicationCard.Body>
+                                    <uix:NApplicationCard.TargetApp>
+                                      <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="01cdd97dcbdf26372bdcc31c7762efff.png" Selector="&lt;html app='chrome.exe' title='Customers | Apptivo'/&gt;" Url="https://www.apptivo.com/app/customers.jsp#/dashboard/show-all/" />
+                                    </uix:NApplicationCard.TargetApp>
+                                  </uix:NApplicationCard>
+                                </Sequence>
+                              </ActivityAction>
+                            </ui:ForEachRow.Body>
+                            <ui:ForEachRow.DataTable>
+                              <InArgument x:TypeArguments="sd:DataTable">
+                                <mca:CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_13">DatosEmpresas</mca:CSharpValue>
+                              </InArgument>
+                            </ui:ForEachRow.DataTable>
+                          </ui:ForEachRow>
+                        </Sequence>
+                      </If.Then>
+                      <If.Else>
+                        <Sequence sap2010:WorkflowViewState.IdRef="Sequence_8">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Sequence>
+                      </If.Else>
+                    </If>
+                  </Sequence>
+                </ActivityAction>
+              </uix:NApplicationCard.Body>
+              <uix:NApplicationCard.TargetApp>
+                <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="f6205074ca05b6669bff26bc6c7688e2.png" Selector="&lt;html app='chrome.exe' title='Customers | Apptivo'/&gt;" Url="https://www.apptivo.com/app/customers.jsp#/dashboard/show-all/" />
+              </uix:NApplicationCard.TargetApp>
+            </uix:NApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEachRow.Body>
+      <ui:ForEachRow.DataTable>
+        <InArgument x:TypeArguments="sd:DataTable">
+          <mca:CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_11">DatosEmpresas</mca:CSharpValue>
+        </InArgument>
+      </ui:ForEachRow.DataTable>
+    </ui:ForEachRow>
+  </Sequence>
+</Activity>

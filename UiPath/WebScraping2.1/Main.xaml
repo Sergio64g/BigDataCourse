@@ -1,0 +1,455 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="772,4917.6" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mca="clr-namespace:Microsoft.CSharp.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.CV</x:String>
+      <x:String>UiPath.Shared.ObjectLibrary</x:String>
+      <x:String>UiPath.CV.Activities</x:String>
+      <x:String>UiPath.CV.Activities.Interfaces</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Sequence primaria" sap:VirtualizedContainerService.HintSize="782.4,4852.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="TablaTiktok" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: TikTok - Make Your Day" sap:VirtualizedContainerService.HintSize="740.8,4606.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="97843edb-71a1-46dd-ba7c-b6605d2fa46a" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="707.2,4389.6" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="sd:DataTable" Name="TablaTendencias" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NExtractData AppendResults="False" ContinueOnError="True" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='Tendencia'&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='text'&gt;&lt;webctrl tag='div' idx='4' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="665.6,157.6" sap2010:WorkflowViewState.IdRef="NExtractData_2" LimitExtractionTo="Rows" MaximumResults="0" ScopeIdentifier="97843edb-71a1-46dd-ba7c-b6605d2fa46a" Version="V1">
+              <uix:NExtractData.DataTable>
+                <InOutArgument x:TypeArguments="sd:DataTable">
+                  <mca:CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_4">TablaTendencias</mca:CSharpReference>
+                </InOutArgument>
+              </uix:NExtractData.DataTable>
+              <uix:NExtractData.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="393, -129, 348, 1239" FriendlyName="'Para tiSiguiendoLIVEIni…'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='app' tag='DIV' /&gt;" Guid="8ff1a843-ee4b-47e5-bd7c-ba6689e7afd7" InformativeScreenshot="093a077ebcf67ff214a41daaf7aa2096.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Mira videos populares seleccionados para ti | TikTok' /&gt;" SearchSteps="Selector" />
+              </uix:NExtractData.Target>
+            </uix:NExtractData>
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="665.6,4097.6" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+              <ui:ForEachRow.Body>
+                <ActivityAction x:TypeArguments="sd:DataRow">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="Tendencia" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="632,3975.2" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="x:String" Name="URLTendencia" />
+                      <Variable x:TypeArguments="sd:DataTable" Name="PublicationTable" />
+                      <Variable x:TypeArguments="x:String" Name="Hashtag" />
+                      <Variable x:TypeArguments="x:String" Name="NumeroVisualizaciones" />
+                      <Variable x:TypeArguments="sd:DataTable" Name="TablaPublicaciones" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="590.4,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Warn">
+                      <ui:LogMessage.Message>
+                        <InArgument x:TypeArguments="x:Object">
+                          <mca:CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_52">"Hola"</mca:CSharpValue>
+                        </InArgument>
+                      </ui:LogMessage.Message>
+                    </ui:LogMessage>
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="590.4,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Warn">
+                      <ui:LogMessage.Message>
+                        <InArgument x:TypeArguments="x:Object">
+                          <mca:CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_41">Tendencia[0].ToString()</mca:CSharpValue>
+                        </InArgument>
+                      </ui:LogMessage.Message>
+                    </ui:LogMessage>
+                    <Assign sap:VirtualizedContainerService.HintSize="590.4,61.6" sap2010:WorkflowViewState.IdRef="Assign_1">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">
+                          <mca:CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_6">URLTendencia</mca:CSharpReference>
+                        </OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">
+                          <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_42">"https://www.tiktok.com/tag/" + Tendencia[0].ToString() + "?lang=es"</mca:CSharpValue>
+                        </InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="590.4,82.4" sap2010:WorkflowViewState.IdRef="NGoToUrl_1" Version="V1">
+                      <uix:NGoToUrl.Url>
+                        <InArgument x:TypeArguments="x:String">
+                          <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_38">URLTendencia</mca:CSharpValue>
+                        </InArgument>
+                      </uix:NGoToUrl.Url>
+                    </uix:NGoToUrl>
+                    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="590.4,3391.2" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+                      <TryCatch.Try>
+                        <Sequence sap:VirtualizedContainerService.HintSize="553.6,3160" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                          <Sequence.Variables>
+                            <Variable x:TypeArguments="ui:UiElement" Name="HashtagExists" />
+                            <Variable x:TypeArguments="x:Boolean" Name="ElementExists" />
+                            <Variable x:TypeArguments="x:String" Name="ElementClass" />
+                          </Sequence.Variables>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:WaitUiElementAppear WaitActive="{x:Null}" WaitVisible="{x:Null}" ContinueOnError="False" DisplayName="Find Element 'H1'" sap:VirtualizedContainerService.HintSize="512,107.2" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_1">
+                            <ui:WaitUiElementAppear.FoundElement>
+                              <OutArgument x:TypeArguments="ui:UiElement">
+                                <mca:CSharpReference x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpReference`1_12">HashtagExists</mca:CSharpReference>
+                              </OutArgument>
+                            </ui:WaitUiElementAppear.FoundElement>
+                            <ui:WaitUiElementAppear.Target>
+                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="6df6505d-0451-4658-8c7b-4898440620ad" InformativeScreenshot="f2f585026d03c6c2d460282f393cd0a4" Selector="&lt;webctrl tag='H1' /&gt;">
+                                <ui:Target.TimeoutMS>
+                                  <InArgument x:TypeArguments="x:Int32" />
+                                </ui:Target.TimeoutMS>
+                                <ui:Target.WaitForReady>
+                                  <InArgument x:TypeArguments="ui:WaitForReady" />
+                                </ui:Target.WaitForReady>
+                              </ui:Target>
+                            </ui:WaitUiElementAppear.Target>
+                          </ui:WaitUiElementAppear>
+                          <uix:NGetAttribute Attribute="class" DisplayName="Get Attribute 'SanValentin'" sap:VirtualizedContainerService.HintSize="512,208" sap2010:WorkflowViewState.IdRef="NGetAttribute_1" ScopeIdentifier="97843edb-71a1-46dd-ba7c-b6605d2fa46a" Version="V1">
+                            <uix:NGetAttribute.Result>
+                              <OutArgument x:TypeArguments="x:String">
+                                <mca:CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_17">ElementClass</mca:CSharpReference>
+                              </OutArgument>
+                            </uix:NGetAttribute.Result>
+                            <uix:NGetAttribute.Target>
+                              <uix:TargetAnchorable BrowserURL="https://www.tiktok.com/tag/SanValentin?lang=es" DesignTimeRectangle="43, 720, 20, 20" ElementType="Icon" FriendlyName="'SVG'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;a&amp;gt;div&amp;gt;svg' parentid='app' tag='svg' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='app' tag='svg' aaname='' /&gt;" Guid="8b3c427c-5249-457f-ade4-2394992f7c65" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAADXSURBVEhL7ZJBDgFBEEWdQuwdQaydgaVDsHMIVnMKFq4xiXOMg7T8nm6pKb+mGhkWvKQiftR/bXpGYWD+ApciwWa7C/tDlb61sIxRJBhPprFQwjLGDwia5hrL5PNmmcWDAKdartb3mc0XsQyffVmeur6kphYqwKKcXOZlGFegwQLKjqdzSnhm4QpQostYZvF5AZbk4E5QhjemL8uj6QjwAyy+OrhkTUeA91uf6Jl/gH2NewcoQZlcZpmFK8inlWUssygWSFhm8X0BnjcKJSyzcAXvMrAghBua9eraPkFrYwAAAABJRU5ErkJggg==" InformativeScreenshot="1aea1d465471627afe966f0c5e44b8bf.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Videos con el hashtag #sanvalentin en TikTok' /&gt;" SearchSteps="FuzzySelector, Image">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                    <uix:Target DesignTimeRectangle="63, 720, 100, 20" ElementType="Text" FriendlyName="'SanValentin'" FullSelectorArgument="&lt;webctrl aaname='SanValentin' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='SanValentin' tag='P' type='' check:text='SanValentin' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGgAAAAYCAYAAAAWPrhgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAURSURBVGhD7Zj5UxRXEMf9E1P5LUclZZmYw2gSjUjUkJUoYARKMRiDUtFEPBANEFBUIgIhGFSKEIQglxwicgYIrJyd/Tynl9l1dzODQk2q5ls1tbM9b97r7m93v36zQXx4Gj5BHodPkMfhE+Rx+AR5HD5BHodPkMfhiqDg06dSXVMn6RnZEkhNl8zso1Jb+5uRv2wMj4xKcUm59PT0WpLnMTc3J5W/3JL623dkaWnJkibG4OBjqaiolGAwaEnWFsvLy9Lb2y8TE39bEndwTNDk5KRkZuXIZ0l75WrFDWlqapYLhZfl4093SfLugPQ8jO/I1QDSc44el5P5p2V+ft6SRuLBg055971t8kdziyX5b7S1tcu+1AyZmpq2JC8P09P/SO6xE9LZ2W1JJETMhHyRsl+KLpVYEnfYUFd327pNjOrqX2X3nn0yOjpmSZ5Bo3i1EZII9fUNkrQrRYaeDFuSFRCZJaXlknEw2zjGKdaSIOZkbtZQoOfw8IjMzM5aEndwTFBJ6RXHziDi/2xplZ+Ky+TS5VJhDXsZpBx1dz80imMUZZJxVVU1EePGxyfky0Ca3KissiQr0GfoZcfo2LgZz3w86+8fME5SxCJocXHRyNGXi3tkdjAPF/rdvdto5q+4VmkqC5icnJKGO/dMQFFhWlv/ktnZYIStwKntCscljnKycdOHcu58UcJo0FL4deYRs19V3ao1Dsk+nBsml6z79ni+UMLSMrJMqeSifOadOGWeg0RZQnZ9tG2n9PX1WxIxgUDJZS6ceKbggryzeatxnCKaIJxyMv8Hoy97GRf3yOwOY050PZSZE5q3UC4WFZt50A2bKWuUsjff2ixJySlm3NDQk7CtVCDg1HaFY4KIqPIr1+S1NzYZJTCirLziuQhlXF+UjLK4N6R8e3uH+a9KFpwtjFCIIGA/G3w8ZElW9hl72dD3o/ensVD2aEQDdCCav8v7PjzOThDPfy67ap7byeAemT1zcSJOnZ5eyTxKb/LngbBdzMncsXSNJsiJ7cBVF4dBI6HuCsUxYMvWHfLKq68b5e2OYtzAo0G5H0pzNkkMRilVPFppBe/QHfKr4F0cc/bcxXCnRtaQKbGaA7KbdSgjCwsL5p611Bl2gihL+w8cinCoouV+mxw+csyUKaCRbkc0IW4IcmI7cEVQNCCFLHp74/umpACU/CY3zzQUGHTqdIFRiIxTxd0qaW8WID9e2fu94Z4hjrkpQRwDIJb/sQhinR079xhdWdd+UaZ0HPhfEgQ0wn88c95EOAtzTlLDACXOHqlulRy3NQt6zwZtB9mQ+tVBsw9BIuD3ZmjzjUcQ5YQSRSbyP/oiAHQuzxPU0dFlDnnR0AWVIIygkVDDgI5ZLUGaNQQCmzhZYm8OAO9A3MDAI0vyDKzJWqyp/5UgDa7r129G6BsLniaIUkZXw56jZx5kZAYt4gdbtoeVotSlpWdFnJc4SVOidIxbJQEH4U+2JxsdYh1e2XvoHskYdTZjOCDGIwi0hI4DzIve+h5z8bWBBkjhhCD2K/YtCGdtrnUhCLBYTW2diV4aA72o382hEqHGoQBOwZFENItq9L8IQRrtdJHxvhx0dfVISuCA2T+YB2dRFhMRhN7ojx10iwQSv5yhWFPhhCDm0k6Xq7Gxaf0IsoPvWCiX6HsWijCGTmo9gZPYO2ZmZsJB4wSM5R3ejT6kuoHO43b9eHjhJsHH2sInyOPwCfI4fII8DZF/AZ9TEU6OiANNAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NGetAttribute.Target>
+                          </uix:NGetAttribute>
+                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="512,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info">
+                            <ui:LogMessage.Message>
+                              <InArgument x:TypeArguments="x:Object">
+                                <mca:CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_56">ElementClass</mca:CSharpValue>
+                              </InArgument>
+                            </ui:LogMessage.Message>
+                          </ui:LogMessage>
+                          <Assign sap:VirtualizedContainerService.HintSize="512,61.6" sap2010:WorkflowViewState.IdRef="Assign_2">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:Boolean">
+                                <mca:CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_18">ElementExists</mca:CSharpReference>
+                              </OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:Boolean">
+                                <mca:CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_55">HashtagExists != null</mca:CSharpValue>
+                              </InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <If Condition="True" sap:VirtualizedContainerService.HintSize="512,2436" sap2010:WorkflowViewState.IdRef="If_1">
+                            <If.Then>
+                              <Sequence sap:VirtualizedContainerService.HintSize="476.8,2245.6" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                                <Sequence.Variables>
+                                  <Variable x:TypeArguments="sd:DataTable" Name="PublicationDataTable" />
+                                </Sequence.Variables>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <uix:NGetText DisplayName="Get Text Hashtag" sap:VirtualizedContainerService.HintSize="435.2,157.6" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="97843edb-71a1-46dd-ba7c-b6605d2fa46a" Version="V1">
+                                  <uix:NGetText.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://www.tiktok.com/tag/SuperBowl?lang=es" DesignTimeRectangle="412, 203, 392, 42" FriendlyName="'#superbowl'" FullSelectorArgument="&lt;webctrl tag='H1' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' /&gt;" Guid="cb64b039-3bca-4ae2-aac3-279f97699966" InformativeScreenshot="77fa596ea2690a3bde9c868e0b63eed5.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Videos con el hashtag #superbowl en TikTok' /&gt;" SearchSteps="FuzzySelector">
+                                      <uix:TargetAnchorable.Anchors>
+                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                          <uix:Target DesignTimeRectangle="8, 111, 1920, 60" ElementType="InputBox" FriendlyName="'TikTokCargar Iniciar'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div' parentid='app' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='app' tag='DIV' aaname='' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
+                                        </scg:List>
+                                      </uix:TargetAnchorable.Anchors>
+                                    </uix:TargetAnchorable>
+                                  </uix:NGetText.Target>
+                                  <uix:NGetText.Text>
+                                    <OutArgument x:TypeArguments="x:String">
+                                      <mca:CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_7">Hashtag</mca:CSharpReference>
+                                    </OutArgument>
+                                  </uix:NGetText.Text>
+                                </uix:NGetText>
+                                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="435.2,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info">
+                                  <ui:LogMessage.Message>
+                                    <InArgument x:TypeArguments="x:Object">
+                                      <mca:CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_53">"Hastag: " + Hashtag</mca:CSharpValue>
+                                    </InArgument>
+                                  </ui:LogMessage.Message>
+                                </ui:LogMessage>
+                                <uix:NGetText DisplayName="Get Text Numero Visualizaciones" sap:VirtualizedContainerService.HintSize="435.2,157.6" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="97843edb-71a1-46dd-ba7c-b6605d2fa46a" Version="V1">
+                                  <uix:NGetText.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://www.tiktok.com/tag/SanValentin?lang=es" DesignTimeRectangle="514, 308, 172, 20" FriendlyName="'4.1B visualizaciones'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;h2&amp;gt;strong' tag='STRONG' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='STRONG' /&gt;" Guid="d38b46ed-381a-4bcb-9274-b9910a0889cf" InformativeScreenshot="d7e35b4d1deb7641b085b7ab76904181.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Videos con el hashtag #sanvalentin en TikTok' /&gt;" SearchSteps="FuzzySelector">
+                                      <uix:TargetAnchorable.Anchors>
+                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                          <uix:Target DesignTimeRectangle="7, 135, 1924, 79" ElementType="InputBox" FriendlyName="'TikTokCargar Iniciar'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div' parentid='app' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='app' tag='DIV' aaname='' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
+                                        </scg:List>
+                                      </uix:TargetAnchorable.Anchors>
+                                    </uix:TargetAnchorable>
+                                  </uix:NGetText.Target>
+                                  <uix:NGetText.Text>
+                                    <OutArgument x:TypeArguments="x:String">
+                                      <mca:CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_8">NumeroVisualizaciones</mca:CSharpReference>
+                                    </OutArgument>
+                                  </uix:NGetText.Text>
+                                </uix:NGetText>
+                                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="435.2,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info">
+                                  <ui:LogMessage.Message>
+                                    <InArgument x:TypeArguments="x:Object">
+                                      <mca:CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_54">"Nº visualizaciones: " + NumeroVisualizaciones</mca:CSharpValue>
+                                    </InArgument>
+                                  </ui:LogMessage.Message>
+                                </ui:LogMessage>
+                                <uix:NExtractData AppendResults="False" ContinueOnError="True" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='Nickname'&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column2' Name='Text'&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='text'&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='a' idx='2' /&gt;&lt;webctrl tag='p' idx='1' /&gt;&lt;webctrl tag='h4' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column2' attr='text'&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="435.2,157.6" sap2010:WorkflowViewState.IdRef="NExtractData_3" LimitExtractionTo="Rows" MaximumResults="0" ScopeIdentifier="97843edb-71a1-46dd-ba7c-b6605d2fa46a" Version="V1">
+                                  <uix:NExtractData.DataTable>
+                                    <InOutArgument x:TypeArguments="sd:DataTable">
+                                      <mca:CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_9">PublicationTable</mca:CSharpReference>
+                                    </InOutArgument>
+                                  </uix:NExtractData.DataTable>
+                                  <uix:NExtractData.Target>
+                                    <uix:TargetAnchorable DesignTimeRectangle="8, 111, 1920, 1562" ElementType="InputBox" FriendlyName="'{&quot;@context&quot;:&quot;https://sc…'" FullSelectorArgument="&lt;webctrl id='app' tag='DIV' /&gt;" Guid="601d4b49-69c1-4445-a6f8-676c699c67af" InformativeScreenshot="8d41624cf68854eb1e174826702ca5b1.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Videos con el hashtag #superbowl en TikTok' /&gt;" SearchSteps="Selector" />
+                                  </uix:NExtractData.Target>
+                                </uix:NExtractData>
+                                <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="435.2,459.2" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+                                  <ui:CommentOut.Body>
+                                    <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="375.2,380.8" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <ui:BuildDataTable DisplayName="Build Data Table Publicacion" sap:VirtualizedContainerService.HintSize="333.6,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_2" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Nickname&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Text&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;">
+                                        <ui:BuildDataTable.DataTable>
+                                          <OutArgument x:TypeArguments="sd:DataTable">
+                                            <mca:CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_14">PublicationDataTable</mca:CSharpReference>
+                                          </OutArgument>
+                                        </ui:BuildDataTable.DataTable>
+                                      </ui:BuildDataTable>
+                                      <ui:AddDataRow ArrayRow="{x:Null}" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="333.6,188" sap2010:WorkflowViewState.IdRef="AddDataRow_2">
+                                        <ui:AddDataRow.DataRow>
+                                          <InArgument x:TypeArguments="sd:DataRow">
+                                            <mca:CSharpValue x:TypeArguments="sd:DataRow" sap2010:WorkflowViewState.IdRef="CSharpValue`1_48">PublicationTable</mca:CSharpValue>
+                                          </InArgument>
+                                        </ui:AddDataRow.DataRow>
+                                        <ui:AddDataRow.DataTable>
+                                          <InOutArgument x:TypeArguments="sd:DataTable">
+                                            <mca:CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_15">PublicationDataTable</mca:CSharpReference>
+                                          </InOutArgument>
+                                        </ui:AddDataRow.DataTable>
+                                      </ui:AddDataRow>
+                                    </Sequence>
+                                  </ui:CommentOut.Body>
+                                </ui:CommentOut>
+                                <ui:BuildDataTable DisplayName="Build Data Table Tendecia" sap:VirtualizedContainerService.HintSize="435.2,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Hashtag&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;NumeroVisualizaciones&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Publications&quot; msdata:DataType=&quot;System.Data.DataTable, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot; msdata:Caption=&quot;&quot; type=&quot;xs:anyType&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;">
+                                  <ui:BuildDataTable.DataTable>
+                                    <OutArgument x:TypeArguments="sd:DataTable">
+                                      <mca:CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_10">TablaTiktok</mca:CSharpReference>
+                                    </OutArgument>
+                                  </ui:BuildDataTable.DataTable>
+                                </ui:BuildDataTable>
+                                <ui:AddDataRow DataRow="{x:Null}" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="435.2,188" sap2010:WorkflowViewState.IdRef="AddDataRow_1">
+                                  <ui:AddDataRow.ArrayRow>
+                                    <InArgument x:TypeArguments="s:Object[]">
+                                      <mca:CSharpValue x:TypeArguments="s:Object[]" sap2010:WorkflowViewState.IdRef="CSharpValue`1_43">new Object[]{Hashtag,NumeroVisualizaciones, PublicationTable}</mca:CSharpValue>
+                                    </InArgument>
+                                  </ui:AddDataRow.ArrayRow>
+                                  <ui:AddDataRow.DataTable>
+                                    <InOutArgument x:TypeArguments="sd:DataTable">
+                                      <mca:CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_11">TablaTiktok</mca:CSharpReference>
+                                    </InOutArgument>
+                                  </ui:AddDataRow.DataTable>
+                                </ui:AddDataRow>
+                                <ui:WriteRange AddHeaders="False" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="435.2,116" sap2010:WorkflowViewState.IdRef="WriteRange_2" SheetName="Hoja1" StartingCell="A2" WorkbookPath="Utils\Resultados.xlsx">
+                                  <ui:WriteRange.DataTable>
+                                    <InArgument x:TypeArguments="sd:DataTable">
+                                      <mca:CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_44">TablaTiktok</mca:CSharpValue>
+                                    </InArgument>
+                                  </ui:WriteRange.DataTable>
+                                </ui:WriteRange>
+                                <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="435.2,309.6" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+                                  <ui:ForEachRow.Body>
+                                    <ActivityAction x:TypeArguments="sd:DataRow">
+                                      <ActivityAction.Argument>
+                                        <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                                      </ActivityAction.Argument>
+                                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="375.2,187.2" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="333.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info">
+                                          <ui:LogMessage.Message>
+                                            <InArgument x:TypeArguments="x:Object">
+                                              <mca:CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_51">CurrentRow</mca:CSharpValue>
+                                            </InArgument>
+                                          </ui:LogMessage.Message>
+                                        </ui:LogMessage>
+                                      </Sequence>
+                                    </ActivityAction>
+                                  </ui:ForEachRow.Body>
+                                  <ui:ForEachRow.DataTable>
+                                    <InArgument x:TypeArguments="sd:DataTable">
+                                      <mca:CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_50">TablaTiktok</mca:CSharpValue>
+                                    </InArgument>
+                                  </ui:ForEachRow.DataTable>
+                                </ui:ForEachRow>
+                              </Sequence>
+                            </If.Then>
+                            <If.Else>
+                              <Sequence sap:VirtualizedContainerService.HintSize="200,85.6" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </Sequence>
+                            </If.Else>
+                          </If>
+                        </Sequence>
+                      </TryCatch.Try>
+                      <TryCatch.Catches>
+                        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="556.8,22.4" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ActivityAction x:TypeArguments="s:Exception">
+                            <ActivityAction.Argument>
+                              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                            </ActivityAction.Argument>
+                          </ActivityAction>
+                        </Catch>
+                      </TryCatch.Catches>
+                    </TryCatch>
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEachRow.Body>
+              <ui:ForEachRow.DataTable>
+                <InArgument x:TypeArguments="sd:DataTable">
+                  <mca:CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_36">TablaTendencias</mca:CSharpValue>
+                </InArgument>
+              </ui:ForEachRow.DataTable>
+            </ui:ForEachRow>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="4895f2c2c9387dafbec4f95c63d8a47e.png" Selector="&lt;html app='chrome.exe' title='TikTok - Make Your Day'/&gt;" Url="https://www.tiktok.com/es/" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="740.8,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Pequedines.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InArgument x:TypeArguments="sd:DataTable" x:Key="TablaTiktok">
+          <mca:CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_49">TablaTiktok</mca:CSharpValue>
+        </InArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+    </ui:InvokeWorkflowFile>
+  </Sequence>
+</Activity>

@@ -1,0 +1,521 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="765.6,3891.2" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mca="clr-namespace:Microsoft.CSharp.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="40">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="40">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="776,3826.4" sap2010:WorkflowViewState.IdRef="Sequence_3">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="ExtractDataTable">
+        <Variable.Default>
+          <mca:CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_24">new System.Data.DataTable();</mca:CSharpValue>
+        </Variable.Default>
+      </Variable>
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="734.4,453.6" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="375.2,375.2" sap2010:WorkflowViewState.IdRef="Sequence_9">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:InterruptibleWhile CurrentIndex="{x:Null}" DisplayName="While" sap:VirtualizedContainerService.HintSize="333.6,282.4" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
+            <ui:InterruptibleWhile.Body>
+              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="241.6,115.2" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <Delay sap:VirtualizedContainerService.HintSize="200,22.4" sap2010:WorkflowViewState.IdRef="Delay_1">
+                  <InArgument x:TypeArguments="x:TimeSpan">
+                    <mca:CSharpValue x:TypeArguments="x:TimeSpan" sap2010:WorkflowViewState.IdRef="CSharpValue`1_36">86400000</mca:CSharpValue>
+                  </InArgument>
+                </Delay>
+              </Sequence>
+            </ui:InterruptibleWhile.Body>
+            <ui:InterruptibleWhile.Condition>
+              <mca:CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_35">1==1</mca:CSharpValue>
+            </ui:InterruptibleWhile.Condition>
+          </ui:InterruptibleWhile>
+        </Sequence>
+      </ui:CommentOut.Body>
+    </ui:CommentOut>
+    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Browser Chrome: Próximos estrenos España por fecha de lanzamiento - FilmAffinity" sap:VirtualizedContainerService.HintSize="734.4,3240" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="4b6c1ece-8c0e-4941-aa53-61aa5ab25e08" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="700.8,3023.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="sd:DataTable" Name="Pre_FilmDataTable" />
+              <Variable x:TypeArguments="sd:DataTable" Name="FilmsDataTable" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NExtractData AppendResults="False" ContinueOnError="True" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='Titulo'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='Url'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;true&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column4' Name='Genero'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column5' Name='GeneroUrl'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;true&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column6' Name='Duracion'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='text' name2='Column1' attr2='href'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='h3' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column4' attr='text' name2='Column5' attr2='href'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column6' attr='text'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;/column&gt;&lt;/extract&gt;" ExtractSimilar="True" sap:VirtualizedContainerService.HintSize="659.2,157.6" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="Rows" MaximumResults="10" ScopeIdentifier="4b6c1ece-8c0e-4941-aa53-61aa5ab25e08" Version="V1">
+              <uix:NExtractData.DataTable>
+                <InOutArgument x:TypeArguments="sd:DataTable">
+                  <mca:CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_1">Pre_FilmDataTable</mca:CSharpReference>
+                </InOutArgument>
+              </uix:NExtractData.DataTable>
+              <uix:NExtractData.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.filmaffinity.com/es/rdcat.php?id=upc_th_es" DesignTimeRectangle="660, 778, 737, 2372" FriendlyName="'9 de junio de 2022'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='main-wrapper-rdcat' tableRow='1' tag='DIV' /&gt;" Guid="decaca3d-1f52-4c91-b62a-72d6697bcbc1" InformativeScreenshot="037d765f5e875cdc9432486a860f0937.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Próximos estrenos España por fecha de lanzamiento - FilmAffinity' /&gt;" SearchSteps="Selector" Visibility="Interactive" />
+              </uix:NExtractData.Target>
+            </uix:NExtractData>
+            <ui:BuildDataTable DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="659.2,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Titulo&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Url&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Genero&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;GeneroUrl&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Duracion&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Sinopsis&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Reparto&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;ImageUrl&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;">
+              <ui:BuildDataTable.DataTable>
+                <OutArgument x:TypeArguments="sd:DataTable">
+                  <mca:CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_12">FilmsDataTable</mca:CSharpReference>
+                </OutArgument>
+              </ui:BuildDataTable.DataTable>
+            </ui:BuildDataTable>
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="659.2,2477.6" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+              <ui:ForEachRow.Body>
+                <ActivityAction x:TypeArguments="sd:DataRow">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="Pre_Film" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="625.6,2360" sap2010:WorkflowViewState.IdRef="Sequence_1">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Browser Chrome: Jurassic World: Dominion (2022) - FilmAffinity" sap:VirtualizedContainerService.HintSize="584,2265.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="e13e253b-62a9-4177-b9d2-00795b954656" Version="V2">
+                      <uix:NApplicationCard.Body>
+                        <ActivityAction x:TypeArguments="x:Object">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="550.4,2048.8" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                            <Sequence.Variables>
+                              <Variable x:TypeArguments="sd:DataTable" Name="ExtractDataTable">
+                                <Variable.Default>
+                                  <mca:CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_3">new System.Data.DataTable();</mca:CSharpValue>
+                                </Variable.Default>
+                              </Variable>
+                              <Variable x:TypeArguments="x:String" Name="Titulo" />
+                              <Variable x:TypeArguments="x:String" Name="Url" />
+                              <Variable x:TypeArguments="x:String" Name="Genero" />
+                              <Variable x:TypeArguments="x:String" Name="GeneroUrl" />
+                              <Variable x:TypeArguments="x:String" Name="Duracion" />
+                              <Variable x:TypeArguments="x:String" Name="Sinopsis" />
+                              <Variable x:TypeArguments="x:String" Name="Reparto" />
+                              <Variable x:TypeArguments="x:String" Name="ImageUrl" />
+                              <Variable x:TypeArguments="sd:DataTable" Name="ImageUrlTable" />
+                            </Sequence.Variables>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="508.8,319.2" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+                              <ui:MultipleAssign.AssignOperations>
+                                <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
+                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
+                                    <ui:AssignOperation.To>
+                                      <OutArgument x:TypeArguments="x:String">
+                                        <mca:CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_36">Titulo</mca:CSharpReference>
+                                      </OutArgument>
+                                    </ui:AssignOperation.To>
+                                    <ui:AssignOperation.Value>
+                                      <InArgument x:TypeArguments="x:String">
+                                        <Literal x:TypeArguments="x:String" Value="" />
+                                      </InArgument>
+                                    </ui:AssignOperation.Value>
+                                  </ui:AssignOperation>
+                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
+                                    <ui:AssignOperation.To>
+                                      <OutArgument x:TypeArguments="x:String">
+                                        <mca:CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_37">Url</mca:CSharpReference>
+                                      </OutArgument>
+                                    </ui:AssignOperation.To>
+                                    <ui:AssignOperation.Value>
+                                      <InArgument x:TypeArguments="x:String">
+                                        <Literal x:TypeArguments="x:String" Value="" />
+                                      </InArgument>
+                                    </ui:AssignOperation.Value>
+                                  </ui:AssignOperation>
+                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
+                                    <ui:AssignOperation.To>
+                                      <OutArgument x:TypeArguments="x:String">
+                                        <mca:CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_38">Genero</mca:CSharpReference>
+                                      </OutArgument>
+                                    </ui:AssignOperation.To>
+                                    <ui:AssignOperation.Value>
+                                      <InArgument x:TypeArguments="x:String">
+                                        <Literal x:TypeArguments="x:String" Value="" />
+                                      </InArgument>
+                                    </ui:AssignOperation.Value>
+                                  </ui:AssignOperation>
+                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_4">
+                                    <ui:AssignOperation.To>
+                                      <OutArgument x:TypeArguments="x:String">
+                                        <mca:CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_39">GeneroUrl</mca:CSharpReference>
+                                      </OutArgument>
+                                    </ui:AssignOperation.To>
+                                    <ui:AssignOperation.Value>
+                                      <InArgument x:TypeArguments="x:String">
+                                        <Literal x:TypeArguments="x:String" Value="" />
+                                      </InArgument>
+                                    </ui:AssignOperation.Value>
+                                  </ui:AssignOperation>
+                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_5">
+                                    <ui:AssignOperation.To>
+                                      <OutArgument x:TypeArguments="x:String">
+                                        <mca:CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_40">Duracion</mca:CSharpReference>
+                                      </OutArgument>
+                                    </ui:AssignOperation.To>
+                                    <ui:AssignOperation.Value>
+                                      <InArgument x:TypeArguments="x:String">
+                                        <Literal x:TypeArguments="x:String" Value="" />
+                                      </InArgument>
+                                    </ui:AssignOperation.Value>
+                                  </ui:AssignOperation>
+                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_6">
+                                    <ui:AssignOperation.To>
+                                      <OutArgument x:TypeArguments="x:String">
+                                        <mca:CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_41">Reparto</mca:CSharpReference>
+                                      </OutArgument>
+                                    </ui:AssignOperation.To>
+                                    <ui:AssignOperation.Value>
+                                      <InArgument x:TypeArguments="x:String">
+                                        <Literal x:TypeArguments="x:String" Value="" />
+                                      </InArgument>
+                                    </ui:AssignOperation.Value>
+                                  </ui:AssignOperation>
+                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_7">
+                                    <ui:AssignOperation.To>
+                                      <OutArgument x:TypeArguments="x:String">
+                                        <mca:CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_42">Sinopsis</mca:CSharpReference>
+                                      </OutArgument>
+                                    </ui:AssignOperation.To>
+                                    <ui:AssignOperation.Value>
+                                      <InArgument x:TypeArguments="x:String">
+                                        <Literal x:TypeArguments="x:String" Value="" />
+                                      </InArgument>
+                                    </ui:AssignOperation.Value>
+                                  </ui:AssignOperation>
+                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_8">
+                                    <ui:AssignOperation.To>
+                                      <OutArgument x:TypeArguments="x:String">
+                                        <mca:CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_43">ImageUrl</mca:CSharpReference>
+                                      </OutArgument>
+                                    </ui:AssignOperation.To>
+                                    <ui:AssignOperation.Value>
+                                      <InArgument x:TypeArguments="x:String">
+                                        <Literal x:TypeArguments="x:String" Value="" />
+                                      </InArgument>
+                                    </ui:AssignOperation.Value>
+                                  </ui:AssignOperation>
+                                </scg:List>
+                              </ui:MultipleAssign.AssignOperations>
+                            </ui:MultipleAssign>
+                            <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="508.8,1595.2" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+                              <TryCatch.Try>
+                                <Sequence sap:VirtualizedContainerService.HintSize="472,1364" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="430.4,226.4" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
+                                    <ui:MultipleAssign.AssignOperations>
+                                      <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
+                                        <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_9">
+                                          <ui:AssignOperation.To>
+                                            <OutArgument x:TypeArguments="x:String">
+                                              <mca:CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_44">Titulo</mca:CSharpReference>
+                                            </OutArgument>
+                                          </ui:AssignOperation.To>
+                                          <ui:AssignOperation.Value>
+                                            <InArgument x:TypeArguments="x:String">
+                                              <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_26">Pre_Film["Titulo"].ToString()</mca:CSharpValue>
+                                            </InArgument>
+                                          </ui:AssignOperation.Value>
+                                        </ui:AssignOperation>
+                                        <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_10">
+                                          <ui:AssignOperation.To>
+                                            <OutArgument x:TypeArguments="x:String">
+                                              <mca:CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_45">Url</mca:CSharpReference>
+                                            </OutArgument>
+                                          </ui:AssignOperation.To>
+                                          <ui:AssignOperation.Value>
+                                            <InArgument x:TypeArguments="x:String">
+                                              <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_27">Pre_Film["Url"].ToString()</mca:CSharpValue>
+                                            </InArgument>
+                                          </ui:AssignOperation.Value>
+                                        </ui:AssignOperation>
+                                        <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_11">
+                                          <ui:AssignOperation.To>
+                                            <OutArgument x:TypeArguments="x:String">
+                                              <mca:CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_46">Genero</mca:CSharpReference>
+                                            </OutArgument>
+                                          </ui:AssignOperation.To>
+                                          <ui:AssignOperation.Value>
+                                            <InArgument x:TypeArguments="x:String">
+                                              <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_28">Pre_Film["Genero"].ToString()</mca:CSharpValue>
+                                            </InArgument>
+                                          </ui:AssignOperation.Value>
+                                        </ui:AssignOperation>
+                                        <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_12">
+                                          <ui:AssignOperation.To>
+                                            <OutArgument x:TypeArguments="x:String">
+                                              <mca:CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_47">GeneroUrl</mca:CSharpReference>
+                                            </OutArgument>
+                                          </ui:AssignOperation.To>
+                                          <ui:AssignOperation.Value>
+                                            <InArgument x:TypeArguments="x:String">
+                                              <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_29">Pre_Film["GeneroUrl"].ToString()</mca:CSharpValue>
+                                            </InArgument>
+                                          </ui:AssignOperation.Value>
+                                        </ui:AssignOperation>
+                                        <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_13">
+                                          <ui:AssignOperation.To>
+                                            <OutArgument x:TypeArguments="x:String">
+                                              <mca:CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_48">Duracion</mca:CSharpReference>
+                                            </OutArgument>
+                                          </ui:AssignOperation.To>
+                                          <ui:AssignOperation.Value>
+                                            <InArgument x:TypeArguments="x:String">
+                                              <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_30">Pre_Film["Duracion"].ToString()</mca:CSharpValue>
+                                            </InArgument>
+                                          </ui:AssignOperation.Value>
+                                        </ui:AssignOperation>
+                                      </scg:List>
+                                    </ui:MultipleAssign.AssignOperations>
+                                  </ui:MultipleAssign>
+                                  <uix:NGetText DisplayName="Get Text 'Sinopsis'" sap:VirtualizedContainerService.HintSize="430.4,157.6" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="e13e253b-62a9-4177-b9d2-00795b954656" Version="V1">
+                                    <uix:NGetText.Target>
+                                      <uix:TargetAnchorable BrowserURL="https://www.filmaffinity.com/es/film374795.html" DesignTimeRectangle="754, 692, 475, 146" FriendlyName="'Cuatro años'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl idx='13' tableRow='1' tag='DD' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='' type='' tag='DD' /&gt;" Guid="32c6d1c6-ccb4-4168-a51b-094dfd0cdbd2" InformativeScreenshot="5a4918512e60ccae2c39f867b3c6d103.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Jurassic World: Dominion (2022) - FilmAffinity' /&gt;" SearchSteps="FuzzySelector" Visibility="Interactive">
+                                        <uix:TargetAnchorable.Anchors>
+                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                            <uix:Target DesignTimeRectangle="660, 693, 81, 14" FriendlyName="'Sinopsis'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl idx='13' tableRow='1' tag='DT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='' type='' tag='DT' aaname='Sinopsis' check:innerText='Sinopsis' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFUAAAASCAYAAAAqqJKOAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAFiSURBVFhH7ZbbDYMwDEW7NUuUKWAMmAKWoEu4+BU7bqvmg0hBypWQCsRJfHxj+oCuy9WhVlCHWkEdagW1D/W1wjgMMOj1XOGQV9s8wLjoXX2Vrtc2VAE67XJ/ChPzYFtU21D36XTnBJvckgj0COvLO+eA9XnCn3G8OHp2UTRPdLrELHYSzIX8TmP0eeZUP2fYY+PHf4OJNs0QoyLUBIwSlpjM7TKOgCs4AeKKdSyjKwrugcfYevjM9oTjrSA3+VBRkskVlkyEaom5pBGwbxfJ/THG5suhmn5BjboF1EwJyidU672WNAHyUMmRBjX2a4WMv7WQOsa/1xNAY0KPbxpqPFYsA1YCtdypn85lfVsvV3R22051fU7FraDcqX97qgJ3a+XwcK6wXnI7Kxa//ePvjxldlkwRVBS5U+KTayXG/WPI43U9e+5hc3HjnKz79dTLFAtxnTrUDvUe6lArqEO9XABvBcXzCTj1OyAAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                                          </scg:List>
+                                        </uix:TargetAnchorable.Anchors>
+                                      </uix:TargetAnchorable>
+                                    </uix:NGetText.Target>
+                                    <uix:NGetText.Text>
+                                      <OutArgument x:TypeArguments="x:String">
+                                        <mca:CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_29">Sinopsis</mca:CSharpReference>
+                                      </OutArgument>
+                                    </uix:NGetText.Text>
+                                  </uix:NGetText>
+                                  <uix:NGetText DisplayName="Get Text 'Reparto'" sap:VirtualizedContainerService.HintSize="430.4,157.6" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="e13e253b-62a9-4177-b9d2-00795b954656" Version="V1">
+                                    <uix:NGetText.Target>
+                                      <uix:TargetAnchorable BrowserURL="https://www.filmaffinity.com/es/film397326.html" DesignTimeRectangle="754, 715, 475, 16" FriendlyName="'Animación'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl idx='5' isleaf='1' tableRow='1' tag='DD' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='card-cast' isleaf='1' type='' tag='DD' /&gt;" Guid="b2a25462-d79c-4e49-8a11-71eb3ee48cc6" InformativeScreenshot="4124eebdf0c67583c24cba11ac6d53d9.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='The Deer King (El rey ciervo) (2021) - FilmAffinity' /&gt;" SearchSteps="FuzzySelector" Visibility="Interactive">
+                                        <uix:TargetAnchorable.Anchors>
+                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                            <uix:Target DesignTimeRectangle="660, 715, 81, 14" FriendlyName="'Reparto'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl idx='9' tableRow='1' tag='DT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='' type='' tag='DT' aaname='Reparto' check:innerText='Reparto' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFUAAAASCAYAAAAqqJKOAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAFBSURBVFhH7ZVhDoMgDIV3ay4hN9g/zU4hp9BL6CU6ocWW6syyyBKUl5iAtE34eJQHVJ2uCjWDKtQMqlAzqBioU2/BGLP52pECMmvoDNh+otmxyoLaOEi2NbYL2BYGmubUfaAuOFtjwc00DZDJxWvsBK5ZHN07sLQm4aQ3INbCHNvg2vPFMTHXQ9b/oq7j1NlDS6GYzq/QeC9OOT2AkjlhjJJOxYOQ9dI2VHhPZZduoHtgYU6uE276dJVDDQH1U47O58NAFetUvZF96N5NCEg6iaFEF4tPQD3KkVD5MFAFX3/fT3lzemMsDYHnuibXOIKajr30AV+0p9JGxfVfc0VcWhMP6RuoIe8yPVVDjcCiS+Trvz5ABKjjNQZAIGO86sMSFIJM3RrrSdd6FQP1d20B5VaFmkE3gPp/VagZVKGeLoA3B5DyQN7cWEAAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                                          </scg:List>
+                                        </uix:TargetAnchorable.Anchors>
+                                      </uix:TargetAnchorable>
+                                    </uix:NGetText.Target>
+                                    <uix:NGetText.Text>
+                                      <OutArgument x:TypeArguments="x:String">
+                                        <mca:CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_30">Reparto</mca:CSharpReference>
+                                      </OutArgument>
+                                    </uix:NGetText.Text>
+                                  </uix:NGetText>
+                                  <uix:NExtractData AppendResults="False" ContinueOnError="True" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='ImageUrl'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;true&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column1' attr='href'&gt;&lt;webctrl tag='a' /&gt;&lt;webctrl tag='img' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" ExtractSimilar="True" sap:VirtualizedContainerService.HintSize="430.4,157.6" sap2010:WorkflowViewState.IdRef="NExtractData_4" LimitExtractionTo="Rows" MaximumResults="1" ScopeIdentifier="e13e253b-62a9-4177-b9d2-00795b954656" Version="V1">
+                                    <uix:NExtractData.DataTable>
+                                      <InOutArgument x:TypeArguments="sd:DataTable">
+                                        <mca:CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_34">ImageUrlTable</mca:CSharpReference>
+                                      </InOutArgument>
+                                    </uix:NExtractData.DataTable>
+                                    <uix:NExtractData.Target>
+                                      <uix:TargetAnchorable DesignTimeRectangle="1233, 483, 162, 232" FriendlyName="'DIV movie-main-image-co…'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='movie-main-image-container' tableRow='1' tag='DIV' /&gt;" Guid="8f52a620-b91a-41f7-802c-81a4979b6af7" InformativeScreenshot="e594be3f99cc0ed4951006d7ef5830d0.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Jurassic World: Dominion (2022) - FilmAffinity' /&gt;" SearchSteps="Selector" Visibility="Interactive" />
+                                    </uix:NExtractData.Target>
+                                  </uix:NExtractData>
+                                  <ui:OutputDataTable DisplayName="Output Data Table" sap:VirtualizedContainerService.HintSize="430.4,80.8" sap2010:WorkflowViewState.IdRef="OutputDataTable_1">
+                                    <ui:OutputDataTable.DataTable>
+                                      <InArgument x:TypeArguments="sd:DataTable">
+                                        <mca:CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_25">ImageUrlTable</mca:CSharpValue>
+                                      </InArgument>
+                                    </ui:OutputDataTable.DataTable>
+                                    <ui:OutputDataTable.Text>
+                                      <OutArgument x:TypeArguments="x:String">
+                                        <mca:CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_35">ImageUrl</mca:CSharpReference>
+                                      </OutArgument>
+                                    </ui:OutputDataTable.Text>
+                                  </ui:OutputDataTable>
+                                  <Assign sap:VirtualizedContainerService.HintSize="430.4,61.6" sap2010:WorkflowViewState.IdRef="Assign_1">
+                                    <Assign.To>
+                                      <OutArgument x:TypeArguments="x:String">
+                                        <mca:CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_49">ImageUrl</mca:CSharpReference>
+                                      </OutArgument>
+                                    </Assign.To>
+                                    <Assign.Value>
+                                      <InArgument x:TypeArguments="x:String">
+                                        <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_34">ImageUrl.Split('\n')[1]</mca:CSharpValue>
+                                      </InArgument>
+                                    </Assign.Value>
+                                  </Assign>
+                                  <ui:AddDataRow DataRow="{x:Null}" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="430.4,188" sap2010:WorkflowViewState.IdRef="AddDataRow_1">
+                                    <ui:AddDataRow.ArrayRow>
+                                      <InArgument x:TypeArguments="s:Object[]">
+                                        <mca:CSharpValue x:TypeArguments="s:Object[]" sap2010:WorkflowViewState.IdRef="CSharpValue`1_23">new Object[] {Titulo, Url, Genero, GeneroUrl, Duracion, Sinopsis, Reparto, ImageUrl}</mca:CSharpValue>
+                                      </InArgument>
+                                    </ui:AddDataRow.ArrayRow>
+                                    <ui:AddDataRow.DataTable>
+                                      <InOutArgument x:TypeArguments="sd:DataTable">
+                                        <mca:CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_15">FilmsDataTable</mca:CSharpReference>
+                                      </InOutArgument>
+                                    </ui:AddDataRow.DataTable>
+                                  </ui:AddDataRow>
+                                </Sequence>
+                              </TryCatch.Try>
+                              <TryCatch.Catches>
+                                <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="475.2,22.4" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <ActivityAction x:TypeArguments="s:Exception">
+                                    <ActivityAction.Argument>
+                                      <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                                    </ActivityAction.Argument>
+                                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="333.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info">
+                                      <ui:LogMessage.Message>
+                                        <InArgument x:TypeArguments="x:Object">
+                                          <mca:CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_31" xml:space="preserve">"No se cargo bien la pelicula " +  Pre_Film["Titulo"]</mca:CSharpValue>
+                                        </InArgument>
+                                      </ui:LogMessage.Message>
+                                    </ui:LogMessage>
+                                  </ActivityAction>
+                                </Catch>
+                              </TryCatch.Catches>
+                            </TryCatch>
+                          </Sequence>
+                        </ActivityAction>
+                      </uix:NApplicationCard.Body>
+                      <uix:NApplicationCard.TargetApp>
+                        <uix:TargetApp Area="-1928, -8, 1936, 1048" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="143b57b293df70623d2632150d5dd49f.png" Selector="&lt;html app='chrome.exe' title='Jurassic World: Dominion (2022) - FilmAffinity' /&gt;">
+                          <uix:TargetApp.Url>
+                            <InArgument x:TypeArguments="x:String">
+                              <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_5">Pre_Film["Url"].ToString()</mca:CSharpValue>
+                            </InArgument>
+                          </uix:TargetApp.Url>
+                        </uix:TargetApp>
+                      </uix:NApplicationCard.TargetApp>
+                    </uix:NApplicationCard>
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEachRow.Body>
+              <ui:ForEachRow.DataTable>
+                <InArgument x:TypeArguments="sd:DataTable">
+                  <mca:CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_1">Pre_FilmDataTable</mca:CSharpValue>
+                </InArgument>
+              </ui:ForEachRow.DataTable>
+            </ui:ForEachRow>
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="659.2,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="ConnectDatabase.xaml">
+              <ui:InvokeWorkflowFile.Arguments>
+                <InArgument x:TypeArguments="sd:DataTable" x:Key="FilmsDataTable">
+                  <mca:CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_22">FilmsDataTable</mca:CSharpValue>
+                </InArgument>
+              </ui:InvokeWorkflowFile.Arguments>
+            </ui:InvokeWorkflowFile>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-1928, -8, 1936, 1048" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="45f624b79207afbf33924c249d7bfc04.png" Selector="&lt;html app='chrome.exe' title='Próximos estrenos España por fecha de lanzamiento - FilmAffinity' /&gt;" Url="https://www.filmaffinity.com/es/rdcat.php?id=upc_th_es" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
